@@ -1,0 +1,247 @@
+/* анимация летающих объектов */
+.button1 {animation: fly1 6s infinite ease-in-out;}
+
+
+/* позиции для предложений */
+.mainscreen {
+  position: relative;
+  width: 100vw;
+  height: 421.13vw;
+}
+.border {
+  width: 95.3vw;
+  height: 50vw;
+  left: calc(50% - 96vw/2);
+  top: 2vw;
+  border: 0.14vw solid #FFFFFF;
+  border-radius: 1.72vw 0vw 1.72vw;
+}
+.border1 {
+  width: 5.3vw;
+  height: 50vw;
+  left: calc(100% - 5.1vw/2);
+  top: 2vw;
+  border: 0.14vw solid #FFFFFF;
+  border-radius: 0vw 1.72vw;
+}
+.borderposter {
+  width: 32.3vw;
+  height: 12vw;
+  left: calc(100% - 200.5vw/2);
+  top: calc(100% - 733vw/2);
+  background-color: #FFFFFF;
+  border: 0.14vw solid #FFFFFF;
+  border-radius:  0vw 10vw 10vw 0vw;
+}
+.bordercode {
+  width: 12vw;
+  height: 12vw;
+  left: calc(100% - 135.5vw/2);
+  top: calc(100% - 733vw/2);
+  background-color: #AE00EB;
+  border: 0.14vw solid #FFFFFF;
+  border-radius:  10vw 0vw 10vw 10vw;
+}
+.borderlandingpage {
+  width: 32vw;
+  height: 12vw;
+  left: calc(100% - 108.5vw/2);
+  top: calc(100% - 733vw/2);
+  background-color: #AE00EB;
+  border: 0.14vw solid #FFFFFF;
+  border-radius:  0vw 1.72vw 6vw 6vw;
+}
+.bordermerch {
+  width: 16vw;
+  height: 12vw;
+  left: calc(100% - 41.9vw/2);
+  top: calc(100% - 733vw/2);
+  background-color: #AE00EB;
+  border: 0.14vw solid #FFFFFF;
+  border-radius:  1.72vw 1.72vw 0vw 6vw;
+}
+
+.border2 {
+  width: 97.5vw;
+  height: 17vw;
+  left: calc(100% - 200.5vw/2);
+  top: calc(100% - 738vw/2);
+  border: 0.14vw solid #ffffff;
+  border-radius: 0vw 1.72vw 1.72vw 0vw;
+}
+.border3 {
+  width: 5.3vw;
+  height: 17vw;
+  left: calc(100% - 5.15vw/2);
+  top: calc(100% - 738vw/2);
+  border: 0.14vw solid #FFFFFF;
+  border-radius: 1.72vw 0vw 0vw 1.72vw;
+}
+.borderlandingpagebutton {
+  width: 77.7vw;
+  height: 12vw;
+  left: calc(100% - 200.5vw/2);
+  top: calc(100% - 767vw/2);
+  background-color: #FFA680;
+  border-radius:  0vw 10vw 10vw 0vw;
+}
+.borderposterbutton {
+  width: 90vw;
+  height: 12vw;
+  left: calc(100% - 200.5vw/2);
+  top: calc(100% - 800vw/2);
+  background-color: #E59AFF;
+  border-radius:  0vw 10vw 10vw 0vw;
+}
+.posterdisk{
+  position: relative;
+  width: 43vw;
+  height: 43vw;
+  left: 55.1vw;
+  top: 5.5vw;
+  animation: posterdisk 3s;
+  background-image:url(../images/posterdisk.svg);
+}
+@keyframes posterdisk {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);}
+}
+.bordermerchbutton {
+  width: 77.7vw;
+  height: 12vw;
+  left: calc(100% - 200.5vw/2);
+  top: 5vw;
+  background-color: #bb85ff;
+  border-radius:  0vw 10vw 10vw 0vw;
+}
+.button3 {
+  width: 15vw;
+  height: 15vw;
+  left: calc(100% - 58.9vw/2);
+  top: calc(100% - 801vw/2);
+  background-image: url('../images/3button.svg');
+}
+.button1 {
+  width: 11vw;
+  height: 43vw;
+  left: 4vw;
+  top: 6.5vw;
+  background-image: url('../images/12posterbutton.svg');
+}
+
+/*ПАРАМЕТРЫ ТЕКСТА заголовки*/
+p {
+  position: absolute;
+  font-family: 'kudry', auto;
+  font-size: 1.41vw;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+  letter-spacing: 0.045em;
+  line-height: 147%;
+  color: #FFFFFF;
+}
+
+#landingpage {
+  left: 16vw;
+  top: 41vw;
+  font-size: 4vw;
+}
+
+#posters {
+  left: 16vw;
+  top: 24.5vw;
+  font-size: 4vw;
+}
+
+#merch {
+  left: 16vw;
+  top: 8vw;
+  font-size: 4vw;
+}
+/*ПАРАМЕТРЫ ТЕКСТА заголовки*/
+
+/*ПАРАМЕТРЫ ТЕКСТА кнопки*/
+h1 {
+  position: absolute;
+  font-family: 'raleway', auto;
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: 3.87vw;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+#merchbutton {
+  left: 89vw;
+  top: 55vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+#codebutton {
+  left: 39.5vw;
+  top: 55vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+#postersbutton {
+  left: 2vw;
+  top: 55vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+  color: #bb85ff;
+}
+#landingbutton {
+  left: 47.5vw;
+  top: 55vw;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+/*ПАРАМЕТРЫ ТЕКСТА кнопки*/
+
+.mockupposters {
+  width: 100vw;
+  height: 68vw;
+  left: 0vw;
+  top: 71vw;
+  background-image: url('../images/mockupposter.svg');
+}
+
+.posters {
+  width: 100vw;
+  height: 128vw; 
+  left: 0vw;
+  top: 145vw;
+  background-image: url('../images/Posters.svg');
+}
+.poster {
+  width: 98.8vw;
+  height: 67vw; 
+  left: 0.5vw;
+  top: 283vw;
+  background-image: url('../images/poster.svg');
+}
+.poster1 {
+  width: 98.8vw;
+  height: 67vw; 
+  left: 0.5vw;
+  top: 353vw;
+  background-image: url('../images/poster1.svg');
+}
+.up {
+  position: absolute;
+  width: 3.15vw;
+  height: 15vw;
+  left: 95.75vw;
+  top: 400vw;
+  background-image: url('../images/up.svg');
+  cursor: url('../images/cursor.svg'), pointer;
+}
+#option {
+  height: 3.39vw;
+  width: 40.32vw;
+  left: 29.84vw;
+  top: 298.47vw;
+}

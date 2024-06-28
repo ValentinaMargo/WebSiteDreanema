@@ -1,0 +1,151 @@
+/* прогресс загрузки */
+progress {
+    position: absolute;
+    top: 49.0vw;
+    left: 4.7vw;
+    width: 90vw;
+    height: 0.5vw;
+    border-radius: 1.77vw;
+    border: 0.14vw solid #FFFFFF;
+  }
+  progress::-webkit-progress-bar {
+    border-radius: 1.77vw;
+    background-color: #BD00FF;
+  }
+  progress::-webkit-progress-value {
+    border-radius: 1.77vw;
+    background-color: #F4DDFF;
+  }
+  progress::-moz-progress-bar {
+    border-radius: 1.77vw;
+    background-color: #F4DDFF;
+  }
+  
+  
+  
+  /* переверни экран  */
+  .mustrotate {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .smallsprinkles {
+    height: 100vh;
+    width: 149vw;
+    background-image: url('../images/sprinkles.png');
+    filter: blur(1px);
+  }
+  .spinner {
+    width: 50vw;
+    height: 50vw;
+    left: 26vw;
+    top: 35%;
+    animation: spinner 3s infinite;
+    background-image: url('../images/spinner.svg');
+  }
+  @keyframes spinner {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }
+  
+  
+  /* позиции для главного экрана */
+  .mainscreen1 {
+    position: relative;
+    width: 100vw;
+    height: 56.3vw;
+  }
+  .sprinkles {
+    height: 100vw;
+    width: 149vw;
+    background-image: url('../images/sprinkles.png');
+    filter: blur(1px);
+  }
+  .border {
+    position: absolute;
+    width: 100vw;
+    height: 52.4vw;
+    left: calc(50% - 96vw/2);
+    top: calc(50% - 52.4vw/2);
+    border: 0.14vw solid #FFFFFF;
+    border-radius: 1.72vw;
+  }
+  .blurstars {
+    height: 100vw;
+    width: 149vw;
+    background-image: url('../images/blurstars.png');
+    filter: blur(2px);
+  }
+  .moving {
+    position: absolute;
+    left: 20vw;
+    top: 15vw;
+  }
+  .prelandingpage {animation: fly 2.1s infinite ease-in-out;}
+  .preweb, .dream {animation: fly 2.2s infinite ease-in-out;}
+  .premerch, .preposters {animation: fly 2.3s infinite ease-in-out;}
+  @keyframes fly {
+    0% {transform: translateY(0vw);}
+    50% {transform: translateY(-1vw);}
+    100% {transform: translateY(0vw);}
+  }
+  .preweb {
+    height: 40vw;
+    width: 55vw;
+    left: -23vw;
+    top: 4.61vw;
+    background-image: url('../images/preweb.png');
+    cursor: url('../images/cursor.svg'), auto;
+  }
+  .prelandingpage {
+    height: 39.55vw;
+    width: 36vw;
+    left: 37vw;
+    top: -12vw;
+    background-image: url('../images/prelandingpage.png');
+    cursor: url('../images/cursor.svg'), auto;
+  }
+  .premerch {
+    height: 65vw;
+    width: 70vw;
+    left: 20vw;
+    top: 30vw;
+    background-image: url('../images/premerch.png');
+    cursor: url('../images/cursor.svg'), auto;
+  }
+
+  .preposters {
+    height: 45vw;
+    width: 45vw;
+    left: 80vw;
+    top: -5vw;
+    background-image: url('../images/preposters.png');
+    cursor: url('../images/cursor.svg'), auto;
+  }
+  .color {
+    transition: 0.7s ease-in-out;
+    filter: grayscale(50%) blur(8px);
+    scale: 1;
+  }
+  .color:hover {
+    transition: 0.7s ease-in-out;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%) blur(0px);
+    scale: 1.1;
+  }
+   /* фоновая надпись */
+  #dream {
+    height: 45vw;
+    width: 45vw;
+    left: -0.5vw;
+    top: 15vw;
+    font-family: 'kudry', auto;
+    font-size: 18vw;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-align: center;
+    letter-spacing: 0.045em;
+    line-height: 147%;
+    color: #FFFFFF;
+   }
+ 

@@ -1,0 +1,225 @@
+/* общие анимации */
+@import "reset.css";
+@keyframes fly {
+  0% {transform: translateY(0vw);}
+  50% {transform: translateY(-1.1vw);}
+  100% {transform: translateY(0vw);}
+}
+@keyframes fly1 {
+  0% {transform: translateY(0vw);}
+  50% {transform: translateY(-2.1vw);}
+  100% {transform: translateY(0vw);}
+}
+@keyframes fly2 {
+  0% {transform: translateY(0vw);}
+  50% {transform: translateY(-5.1vw);}
+  100% {transform: translateY(0vw);}
+}
+@keyframes wow {
+  0% {background-color: #BD00FF;}
+  50% {background-color: grey;}
+  100% {background-color: #BD00FF;}
+}
+.wow {animation: wow 2.5s;}
+
+
+/* общие свойства*/
+html {
+  background-color: #BD00FF;
+  transition: all .6s ease;
+  cursor: url('../images/cursor.svg'), auto;
+  color:#FFFFFF;
+}
+@font-face {
+  font-family: "kudry";
+  src: url("../fonts/kudry_weird-headline.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/raleway-v22-cyrillic-300.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  position: absolute;
+  font-family: 'raleway', auto;
+  font-size: 4vw;
+  font-weight: 400;
+  line-height: 3.87vw;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+p {
+  position: absolute;
+  font-family: 'kudry', auto;
+  font-size: 1.41vw;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+  letter-spacing: 0.045em;
+  line-height: 147%;
+  color: #FFFFFF;
+}
+a {
+  color: white;
+  cursor: url('../images/cursor.svg'), pointer;
+}
+body {margin: 0px;}
+
+
+
+/* общие параметры */
+.anim:hover {animation-play-state: paused;}
+.none {display: none;}
+.pos {position: absolute;}
+.cover {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.bigsprinkles {
+  height: 440.69vw;
+  width: 105.77vw;
+  filter: blur(1px);
+  background-image: url('../images/bigsprinkles.png');
+}
+
+#naming {
+  position: absolute;
+  width: 93.55vw;
+  height: 3.95vw;
+  left: calc(50% - 93.55vw/2);
+  top: 2.65vw;
+}
+#one {
+  left: 44.5vw;
+  top: 8.5vw;
+}
+#two {
+  left: 45.5vw;
+  top: 14.19vw;
+}
+#three {
+  left: 41.5vw;
+  top: 19.98vw
+}
+#four {
+  left: 41.55vw;
+  top: 25.59vw;
+}
+#five {
+  left: 40.55vw;
+  top: 31.12vw;
+}
+#six {
+  font-size: 2.5vw;
+  width: 14vw;
+  letter-spacing: 0.045em;
+  line-height: 107%;
+  left: 37.7vw;
+  top: 40.49vw;
+}
+#inputs {
+  padding: 0 0;
+  outline: none;
+  border: none;
+  background: none;
+  color: rgb(255, 255, 255);
+  font-family: 'kudry', auto;
+  font-size: 2.4vw;
+  font-weight: 300;
+  line-height: 3.87vw;
+  letter-spacing: 0.02em;
+  text-align: center;
+  cursor: url('../images/input.svg'), text;
+}
+#seven {
+  left: 33.7vw;
+  top: 14.5vw;
+  width: 31vw;
+}
+#eight {
+  left: 33.7vw;
+  top: 20.52vw;
+  width: 31vw;
+}
+#nine {
+  left: 33.7vw;
+  top: 26.7vw;
+  width: 31vw;
+}
+#ten {
+  left: 38.2vw;
+  top: 38.8vw;
+  cursor: url('../images/cursor.svg'), pointer;
+}
+.ontext {transition: 0.7s ease-in-out;}
+.ontext:hover {
+  text-shadow: 0px 0px 30px #FFFFFF;
+  transition: 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+
+
+/* скроллбар */
+::-webkit-scrollbar {
+  width: 0.55vw;
+  height: 0vw;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #9C03D2;
+  border-radius: 8vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F4DDFF;
+}
+
+
+
+/* опции меню  */
+.options {
+  height: 50vw;
+  width: 50vw;
+  left: 25vw;
+  top: 3vw;
+  background-image: url('../images/options.svg');
+}
+.menustar {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  left: 0vw;
+  top: 0vw;
+  background-image: url('../images/menustar.svg');
+  cursor: url('../images/cursor.svg'), pointer;
+}
+.restartstar {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  left: 95.45vw;
+  top: 0vw;
+  background-image: url('../images/restartstar.svg');
+  cursor: url('../images/cursor.svg'), pointer;
+}
+.off {
+  width: 3.23vw;
+  height: 3.17vw;
+  left: 66.89vw;
+  top: 14.59vw;
+}
